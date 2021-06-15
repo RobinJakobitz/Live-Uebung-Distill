@@ -1281,6 +1281,6 @@ P_TH
 
 # Visualise results
 
-![Visualisierung Bundestagswahlen 2017](G:/1/exercise_05_RJ.png)
+![Visualisierung Bundestagswahlen 2017](Images/exercise_05_RJ.png)
 
 
