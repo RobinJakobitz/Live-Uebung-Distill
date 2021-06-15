@@ -1,7 +1,7 @@
 ---
 title: "About this site"
 description: |
-  Some additional details about the website
+  The Website contains all of my homework from the Infovis SS2021 seminar in chronological order. However my contributions are not the sole viable solution and should only be seen as a possible jump start for your own procedure.
 ---
 
 ```{r setup, include=FALSE}

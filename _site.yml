@@ -1,14 +1,31 @@
 name: "Live Uebung Distill"
-title: "My Distill Website"
-description: |
-  My Distill Website
 output_dir: "_site"
+title: "RJs Distill Website"
 navbar:
-  right:
-    - text: "Home"
+  search: true
+  left:
+    - icon: "fas fa-home"
       href: index.html
+  right:
+    - text: "Visualisation"
+      menu:
+      - text: "Homework Nr.01"
+        href: "exercise_01_RJ.html"
+      - text: "---"
+      - text: "Homework Nr.02"
+        href: "exercise_02_RJ.html"
+      - text: "---"
+      - text: "Homework Nr.03"
+        href: "exercise_03_RJ.html"
+      - text: "---"
+      - text: "Homework Nr.04"
+        href: "exercise_04_RJ.html"
+      - text: "---"
+      - text: "Homework Nr.05"
+        href: "exercise_05_RJ.html"
     - text: "About"
       href: about.html
-    - text: "Visualisation"
-      href: "exercise_01_RJ.html"
-output: distill::distill_article
+output:
+  distill::distill_article:
+    code_folding: true
+

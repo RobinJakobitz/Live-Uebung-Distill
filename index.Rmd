@@ -1,7 +1,7 @@
 ---
-title: "My Distill Website"
+title: "RJ's Distill Website"
 description: |
-  Welcome to the website. I hope you enjoy it!
+  Welcome to this collection of my Homework from the Infovis SS2021 seminar. I hope that you can find something that will help you with your own homework.
 site: distill::distill_website
 ---
 
@@ -13,3 +13,11 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ```
 
+Social's
+---
+
+[Github](https://github.com/RobinJakobitz) /
+[Twitter](https://twitter.com/jmain_r) /
+[LinkedIn](https://de.linkedin.com/)
+
+---
