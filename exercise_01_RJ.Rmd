@@ -19,7 +19,9 @@ dat <- read_rds("../InfovisSS2021/datasets/lincoln_temps.rds")
 ```
 
 ## Visualisation of temperatures in Lincoln (Nebraska)
+
 # 1. Ridgeline-Plot
+
 ```{r, code_folding: true, visualisation 1}
 #Ridgeline-Plot
 
@@ -28,6 +30,7 @@ dat%>%
   geom_density_ridges(bandwidth=1, color="dark blue", fill="light blue") +
   labs(title="The month july has the highest mean temperature",subtitle="Temperatures in Lincoln (Nebraska)",caption="Temperature is measured in F°",x="Mean temperature per month",y=NULL)
 ```
+
 
 #2. Violin-Plot
 ```{r, code_folding: true, visualisation 2}
