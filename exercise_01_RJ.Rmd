@@ -32,7 +32,8 @@ dat%>%
 ```
 
 
-#2. Violin-Plot
+# 2. Violin-Plot
+
 ```{r, code_folding: true, visualisation 2}
 #Violin-Plot
 

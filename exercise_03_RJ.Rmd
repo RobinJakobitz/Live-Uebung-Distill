@@ -98,7 +98,7 @@ animate(
 
 
 
-# Visualisation 2: 
+# Visualisation 2: Ranking of goals scored by "Bundesliga" teams
 ```{r}
 library(jsonlite)
 raw <- read_json("https://www.openligadb.de/api/getmatchdata/bl1/2020")

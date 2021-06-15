@@ -36,7 +36,7 @@ dat_refined%>%
   geom_boxplot(fill="light blue",color="dark blue")+
   labs(title="Mean temperature changes are increasing with their maximum difference in 2016",subtitle="Mean temperature change in violin and sina plot",caption="Temperature is measured in F°",y="Year",x="Mean temperature change")
 ```
-```
+
 
 
 
