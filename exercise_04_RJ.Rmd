@@ -52,7 +52,7 @@ library(patchwork)
 
 ```
 
-# Visualisierung 2: Meatscore and IMDB-rating checked for Bechdel-test result
+# Visualisation 2: Meatscore and IMDB-rating checked for Bechdel-test result
 ```{r}
 movies %>% filter(metascore != "NA", year==1970:2013) %>% ggplot() +
   aes(x = year, y =  as.numeric(metascore), color=metascore) +
