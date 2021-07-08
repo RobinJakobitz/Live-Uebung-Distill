@@ -1,30 +1,30 @@
 name: "Live Uebung Distill"
 output_dir: "_site"
-title: "RJs Distill Website"
+title: "Home"
+theme:
 navbar:
   search: true
-  left:
-    - icon: "fas fa-home"
-      href: index.html
+  logo:
+    image: "Images/f5f5d2b965532b1602f4c1bb02502efe.jpg"
   right:
-    - text: "Visualisation"
+    - text: "Gaming und..."
       menu:
-      - text: "Homework Nr.01"
-        href: "exercise_01_RJ.html"
+      - text: "Covid-19"
+        href: ""
       - text: "---"
-      - text: "Homework Nr.02"
-        href: "exercise_02_RJ.html"
+      - text: "Gaming in Deutschland"
+        href: ""
       - text: "---"
-      - text: "Homework Nr.03"
-        href: "exercise_03_RJ.html"
+      - text: "Reaktionszeiten"
+        href: ""
       - text: "---"
-      - text: "Homework Nr.04"
-        href: "exercise_04_RJ.html"
+      - text: "Agressionsprobleme"
+        href: ""
       - text: "---"
-      - text: "Homework Nr.05"
-        href: "exercise_05_RJ.html"
-    - text: "About"
+    - text: "Unser Team"
       href: about.html
+    - text: "Kontakt"
+      href: contact.html
 output:
   distill::distill_article:
     code_folding: true

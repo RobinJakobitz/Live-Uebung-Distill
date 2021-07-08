@@ -1,23 +1,27 @@
 ---
-title: "RJ's Distill Website"
+title: "Gaming rettet Leben"
 description: |
-  Welcome to this collection of my Homework from the Infovis SS2021 seminar. I hope that you can find something that will help you with your own homework.
+  Statistiken zu positiven Auswirkungen von Gaming auf dein Leben.
 site: distill::distill_website
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+library(postcards)
 
 # Learn more about creating websites with Distill at:
 # https://rstudio.github.io/distill/website.html
 
 ```
 
-Social's
----
+![](images/pexels-cottonbro-4009598.jpg)
+Gaming sorgt nicht für Agressionen, wie oft vermutet, sondern kann dir helfen, oderso. Lies mehr
 
-[Github](https://github.com/RobinJakobitz) /
-[Twitter](https://twitter.com/jmain_r) /
-[LinkedIn](https://de.linkedin.com/)
+![](images/pexels-cottonbro-4009590.jpg)
 
----
+Gaming schützt dich vor Corona. Lies mehr
+
+![](images/pexels-anete-lusina-4792723.jpg)
+
+Gaming baut deine Reflexe aus. Lies mehr
+
