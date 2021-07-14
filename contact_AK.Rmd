@@ -1,0 +1,15 @@
+---
+title: "Alina Keuter"
+image: "tobi.jpg"
+links:
+  - label: Twitter
+    url: "https://twitter.com/"
+  - label: GitHub
+    url: "https://github.com/AlinaKeuter"
+  - label: Email
+    url: "alina.keuter@rwth-aachen.de"
+output:
+  postcards::jolla
+---
+ 
+Professioneller Videospieler (Animal Crossing) und exzellenter Forscher. Bachelorabsolvent des Studienganges Sprach- und Kommunikationswissenschaften an der RWTH Aachen Universität.

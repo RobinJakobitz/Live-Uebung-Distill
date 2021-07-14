@@ -18,13 +18,17 @@ navbar:
       - text: "Reaktionszeiten"
         href: ""
       - text: "---"
-      - text: "Agressionsprobleme"
+      - text: "Aggressionsprobleme"
         href: ""
       - text: "---"
-    - text: "Unser Team"
+    - text: "Unser Projekt"
       href: about.html
-    - text: "Kontakt"
-      href: contact.html
+    - text: "Unser Team"
+      menu:
+      - text: "Robin Jakobitz"
+        href: contact_RJ.html
+      - text: "Alina Keuter"
+        href: contact_AK.html
 output:
   distill::distill_article:
     code_folding: true

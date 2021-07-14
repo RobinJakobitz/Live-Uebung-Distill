@@ -1,19 +1,15 @@
 ---
-title: "Tobi Burns"
-image: "tobi.jpg"
+title: "Robin Jakobitz B.A."
+image: "Robin.jpg"
 links:
-  - label: LinkedIn
-    url: "https://linkedin.com/"
   - label: Twitter
-    url: "https://twitter.com/"
+    url: "https://twitter.com/jmain_r"
   - label: GitHub
-    url: "https://github.com/"
+    url: "https://github.com/RobinJakobitz"
   - label: Email
-    url: "mailto:email@email.com"
+    url: "robin.jakobitz@rwth-aachen.de"
 output:
   postcards::jolla
 ---
  
-I am a classically trained data scientist living in the San Francisco Bay Area. 
-Currently I work on the Oculus team at Facebook. I love talking about baseball, 
-true crime podcasts, and causal inference.
+Professioneller Videospieler und exzellenter Forscher. Bachelorabsolvent des Studienganges Sprach- und Kommunikationswissenschaften an der RWTH Aachen Universität.

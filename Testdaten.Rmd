@@ -1,0 +1,12 @@
+---
+title: "Testdaten"
+output: html_document
+---
+```{r}
+library(tidyverse)
+download.file('https://www.dropbox.com/s/i5z5dnukfitwkaa/data.rds?raw=1',
+              destfile="data.rds",
+              method="auto")
+#data <-  read_rds("data.rds")
+```
+
