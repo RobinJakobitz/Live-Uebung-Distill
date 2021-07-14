@@ -1,0 +1,15 @@
+---
+title: "Lukas Steinke"
+image: "tobi.jpg"
+links:
+  - label: GitHub
+    url: "https://github.com/LukasSteinke"
+  - label: Email
+    url: "lukas.steinke@rwth-aachen.de"
+output:
+  postcards::jolla
+---
+ 
+Professioneller Videospieler und exzellenter Forscher. Bachelorabsolvent des Studienganges Sprach- und Kommunikationswissenschaften an der RWTH Aachen Universität.
+
+

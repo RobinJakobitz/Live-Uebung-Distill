@@ -1,7 +1,7 @@
 name: "Live Uebung Distill"
 output_dir: "_site"
 title: "Home"
-theme:
+theme: theme.css
 navbar:
   search: true
   logo:
@@ -29,6 +29,8 @@ navbar:
         href: contact_RJ.html
       - text: "Alina Keuter"
         href: contact_AK.html
+      - text: "Lukas Steinke"
+        href: contact_LS.html
 output:
   distill::distill_article:
     code_folding: true

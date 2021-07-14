@@ -2,8 +2,6 @@
 title: "Alina Keuter"
 image: "tobi.jpg"
 links:
-  - label: Twitter
-    url: "https://twitter.com/"
   - label: GitHub
     url: "https://github.com/AlinaKeuter"
   - label: Email
