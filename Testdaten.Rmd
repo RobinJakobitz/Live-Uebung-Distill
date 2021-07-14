@@ -1,15 +1,20 @@
 ---
 title: "Testdaten"
-output: html_document
+description: |
+  Testdaten
+site: distill::distill_website
 ---
 ```{r}
 library(distill)
 library(tidyverse)
-#read_rds(url('https://www.dropbox.com/s/i5z5dnukfitwkaa/data.rds?raw=1'),
-              #destfile="data.rds",
-              #method="auto")
+library(googledrive)
 
-data2 <- read_rds(url("https://www.dropbox.com/s/i5z5dnukfitwkaa/data.rds?raw=1"))
+Testdata_01 <- read_csv(url("https://www.dropbox.com/s/i463nncn2a68xra/SteamCharts.csv?raw=1"))
 
+Testdata_01
+
+Testdata_02 <- read_csv(url("https://www.dropbox.com/s/50bhg6o9ykc4q36/RKI_COVID19.csv?raw=1"))
+
+Testdata_02
 ```
 

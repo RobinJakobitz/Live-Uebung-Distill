@@ -3,9 +3,9 @@ output_dir: "_site"
 title: "Home"
 theme: theme.css
 navbar:
-  search: true
   logo:
     image: "Images/f5f5d2b965532b1602f4c1bb02502efe.jpg"
+  search: true
   right:
     - text: "Gaming und..."
       menu:
@@ -13,7 +13,7 @@ navbar:
         href: ""
       - text: "---"
       - text: "Gaming in Deutschland"
-        href: ""
+        href: Testdaten.html
       - text: "---"
       - text: "Reaktionszeiten"
         href: ""
@@ -31,6 +31,7 @@ navbar:
         href: contact_AK.html
       - text: "Lukas Steinke"
         href: contact_LS.html
+
 output:
   distill::distill_article:
     code_folding: true
