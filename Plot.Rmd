@@ -1,0 +1,82 @@
+---
+title: "Plot"
+description: |
+  Steamcharts
+site: distill::distill_website
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(lubridate)
+library(gganimate)
+library(gifski)
+library(gapminder)
+library(colorspace)
+library(distill)
+library(ggplot2)
+library(ggthemes)
+```
+
+```{r}
+#Daten einlesen
+
+#Testdata_01 <- read_csv(url("https://www.dropbox.com/s/i463nncn2a68xra/SteamCharts.csv?raw=1"))
+
+#Testdata_02 <- read_csv(url("https://www.dropbox.com/s/50bhg6o9ykc4q36/RKI_COVID19.csv?raw=1"))
+
+#Testdata_03 <- read_csv("G:/Downloads/full_data.csv")
+
+#Testdata_04 <- read_csv("G:/Downloads/WHO COVID-19 global table data July 15th 2021 at 12.55.57 PM.csv")
+
+Testdata_05 <- read_csv(url("https://www.dropbox.com/s/ibi9wdked5btmse/owid-covid-data.csv?raw=1"))
+
+SteamCharts <- read_csv(url("https://www.dropbox.com/s/i463nncn2a68xra/SteamCharts.csv?raw=1")) 
+
+```
+
+```{r fig.height = 5, fig.width = 10}
+
+
+
+Testdata_05%>%
+  filter(location=="Germany") -> Testdata_GER
+
+Testdata_GER%>%
+  filter(date != "2020-12-30")%>%
+  filter(date != "2021-01-07") -> Testdata_Clean
+
+Testdata_Clean%>%
+  ggplot(aes(x=date,y=new_cases)) +
+  theme_classic()+
+  geom_line(color="lightblue") +
+  labs(x="Datum",y="Anzahl Neuinfektionen" )
+  
+  
+```
+
+```{r}
+
+SteamCharts %>%
+  filter(gamename %in% c("Team Fortess 2", "Rust", "Dead by Daylight", "Destiny 2", "Grand Theft Auto V", "Terraria"), year %in% 2019:2020) %>% 
+  mutate(month = fct_relevel(month, "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December")) %>% 
+  ggplot(aes(x = month, y = avg, color = year)) +
+  facet_wrap(vars(gamename)) +
+  coord_flip() +
+  scale_color_continuous_sequential(palette = "Batlow") +
+  geom_point(size = 3)
+```
+
+```{r}
+SteamCharts <- read_csv(url("https://www.dropbox.com/s/i463nncn2a68xra/SteamCharts.csv?raw=1")) 
+SteamCharts %>%
+  filter(gamename == "Counter-Strike: Global Offensive", year %in% 2019:2020) %>% 
+  mutate(month = fct_relevel(month, "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December")) %>% 
+  ggplot(aes(x = month, y = avg, color = year)) +
+  facet_wrap(vars(gamename)) +
+  coord_flip() +
+  scale_color_continuous_sequential(palette = "Batlow") +
+  geom_point(size = 3)
+```
+
+
