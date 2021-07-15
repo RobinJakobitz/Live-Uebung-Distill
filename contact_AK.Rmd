@@ -1,6 +1,6 @@
 ---
-title: "Alina Keuter"
-image: "tobi.jpg"
+title: "Alina Keuter B.A."
+image: "Alina.jpeg"
 links:
   - label: GitHub
     url: "https://github.com/AlinaKeuter"
@@ -10,4 +10,4 @@ output:
   postcards::jolla
 ---
  
-Professioneller Videospieler (Animal Crossing) und exzellenter Forscher. Bachelorabsolvent des Studienganges Sprach- und Kommunikationswissenschaften an der RWTH Aachen Universität.
+Professionelle Videospielerin (Animal Crossing, Pokemon und Life Is Strange) und exzellente Forscherin. Bachelorabsolventin des Studienganges Sprach- und Kommunikationswissenschaft an der RWTH Aachen.

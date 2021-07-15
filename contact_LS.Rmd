@@ -1,5 +1,5 @@
 ---
-title: "Lukas Steinke"
+title: "Lukas Steinke B.A."
 image: "tobi.jpg"
 links:
   - label: GitHub
