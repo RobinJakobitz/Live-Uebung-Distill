@@ -2389,9 +2389,9 @@ Gaming und...
 <span class="down-arrow">&#x25BE;</span>
 </button>
 <div class="nav-dropdown-content">
-<a href="">Covid-19</a>
+<a href="Testdaten.html">Covid-19</a>
 <hr/>
-<a href="Testdaten.html">Gaming in Deutschland</a>
+<span class="nav-dropdown-header">Gaming in Deutschland</span>
 <hr/>
 <a href="">Reaktionszeiten</a>
 <hr/>
@@ -2436,57 +2436,53 @@ Unser Team
 <pre class="sourceCode r"><code class="sourceCode r"><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://github.com/rstudio/distill'>distill</a></span><span class='op'>)</span>
 <span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='http://tidyverse.tidyverse.org'>tidyverse</a></span><span class='op'>)</span>
 <span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://googledrive.tidyverse.org'>googledrive</a></span><span class='op'>)</span>
-
-<span class='va'>Testdata_01</span> <span class='op'>&lt;-</span> <span class='fu'>read_csv</span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/connections.html'>url</a></span><span class='op'>(</span><span class='st'>"https://www.dropbox.com/s/i463nncn2a68xra/SteamCharts.csv?raw=1"</span><span class='op'>)</span><span class='op'>)</span>
-
-<span class='va'>Testdata_01</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='http://ggplot2.tidyverse.org'>ggplot2</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://github.com/jrnold/ggthemes'>ggthemes</a></span><span class='op'>)</span>
 </code></pre>
 </div>
 </details>
-<pre><code># A tibble: 83,789 x 7
-   gamename           year month      avg    gain   peak avg_peak_perc
-   &lt;chr&gt;             &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt;   &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt;        
- 1 Counter-Strike: ~  2021 Februa~ 7.41e5  -2196. 1.12e6 65.9567%     
- 2 Counter-Strike: ~  2021 January 7.43e5  25406. 1.12e6 66.0893%     
- 3 Counter-Strike: ~  2020 Decemb~ 7.18e5  49049. 1.16e6 61.646%      
- 4 Counter-Strike: ~  2020 Novemb~ 6.69e5  55088. 1.04e6 64.4605%     
- 5 Counter-Strike: ~  2020 October 6.14e5   6816. 9.44e5 65.0156%     
- 6 Counter-Strike: ~  2020 Septem~ 6.07e5 -33107. 9.78e5 62.0648%     
- 7 Counter-Strike: ~  2020 August  6.40e5  14057. 9.25e5 69.1586%     
- 8 Counter-Strike: ~  2020 July    6.26e5 -45747. 8.58e5 72.9862%     
- 9 Counter-Strike: ~  2020 June    6.72e5 -97148. 1.01e6 66.5349%     
-10 Counter-Strike: ~  2020 May     7.69e5 -88809. 1.19e6 64.4228%     
-# ... with 83,779 more rows</code></pre>
+</div>
+<div class="layout-chunk" data-layout="l-body">
 <details>
 <summary>Show code</summary>
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>Testdata_02</span> <span class='op'>&lt;-</span> <span class='fu'>read_csv</span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/connections.html'>url</a></span><span class='op'>(</span><span class='st'>"https://www.dropbox.com/s/50bhg6o9ykc4q36/RKI_COVID19.csv?raw=1"</span><span class='op'>)</span><span class='op'>)</span>
+<pre class="sourceCode r"><code class="sourceCode r"><span class='co'>#Daten einlesen</span>
 
-<span class='va'>Testdata_02</span>
+<span class='co'>#Testdata_01 &lt;- read_csv(url("https://www.dropbox.com/s/i463nncn2a68xra/SteamCharts.csv?raw=1"))</span>
+
+<span class='co'>#Testdata_02 &lt;- read_csv(url("https://www.dropbox.com/s/50bhg6o9ykc4q36/RKI_COVID19.csv?raw=1"))</span>
+
+<span class='co'>#Testdata_03 &lt;- read_csv("G:/Downloads/full_data.csv")</span>
+
+<span class='co'>#Testdata_04 &lt;- read_csv("G:/Downloads/WHO COVID-19 global table data July 15th 2021 at 12.55.57 PM.csv")</span>
+
+<span class='va'>Testdata_05</span> <span class='op'>&lt;-</span> <span class='fu'>read_csv</span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/connections.html'>url</a></span><span class='op'>(</span><span class='st'>"https://www.dropbox.com/s/ibi9wdked5btmse/owid-covid-data.csv?raw=1"</span><span class='op'>)</span><span class='op'>)</span>
 </code></pre>
 </div>
 </details>
-<pre><code># A tibble: 2,072,611 x 18
-   ObjectId IdBundesland Bundesland Landkreis Altersgruppe Geschlecht
-      &lt;dbl&gt;        &lt;dbl&gt; &lt;chr&gt;      &lt;chr&gt;     &lt;chr&gt;        &lt;chr&gt;     
- 1        1            1 Schleswig~ SK Flens~ A00-A04      M         
- 2        2            1 Schleswig~ SK Flens~ A00-A04      M         
- 3        3            1 Schleswig~ SK Flens~ A00-A04      M         
- 4        4            1 Schleswig~ SK Flens~ A00-A04      M         
- 5        5            1 Schleswig~ SK Flens~ A00-A04      M         
- 6        6            1 Schleswig~ SK Flens~ A00-A04      M         
- 7        7            1 Schleswig~ SK Flens~ A00-A04      M         
- 8        8            1 Schleswig~ SK Flens~ A00-A04      M         
- 9        9            1 Schleswig~ SK Flens~ A00-A04      M         
-10       10            1 Schleswig~ SK Flens~ A00-A04      M         
-# ... with 2,072,601 more rows, and 12 more variables:
-#   AnzahlFall &lt;dbl&gt;, AnzahlTodesfall &lt;dbl&gt;, Meldedatum &lt;chr&gt;,
-#   IdLandkreis &lt;chr&gt;, Datenstand &lt;chr&gt;, NeuerFall &lt;dbl&gt;,
-#   NeuerTodesfall &lt;dbl&gt;, Refdatum &lt;chr&gt;, NeuGenesen &lt;dbl&gt;,
-#   AnzahlGenesen &lt;dbl&gt;, IstErkrankungsbeginn &lt;dbl&gt;,
-#   Altersgruppe2 &lt;chr&gt;</code></pre>
 </div>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="layout-chunk" data-layout="l-body">
+<details>
+<summary>Show code</summary>
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>Testdata_05</span><span class='op'>%&gt;%</span>
+  <span class='fu'><a href='https://rdrr.io/r/stats/filter.html'>filter</a></span><span class='op'>(</span><span class='va'>location</span><span class='op'>==</span><span class='st'>"Germany"</span><span class='op'>)</span> <span class='op'>-&gt;</span> <span class='va'>Testdata_GER</span>
+
+<span class='va'>Testdata_GER</span><span class='op'>%&gt;%</span>
+  <span class='fu'><a href='https://rdrr.io/r/stats/filter.html'>filter</a></span><span class='op'>(</span><span class='va'>date</span> <span class='op'>!=</span> <span class='st'>"2020-12-30"</span><span class='op'>)</span><span class='op'>%&gt;%</span>
+  <span class='fu'><a href='https://rdrr.io/r/stats/filter.html'>filter</a></span><span class='op'>(</span><span class='va'>date</span> <span class='op'>!=</span> <span class='st'>"2021-01-07"</span><span class='op'>)</span> <span class='op'>-&gt;</span> <span class='va'>Testdata_Clean</span>
+
+<span class='va'>Testdata_Clean</span><span class='op'>%&gt;%</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x<span class='op'>=</span><span class='va'>date</span>,y<span class='op'>=</span><span class='va'>new_cases</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggtheme.html'>theme_classic</a></span><span class='op'>(</span><span class='op'>)</span><span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_path.html'>geom_line</a></span><span class='op'>(</span>color<span class='op'>=</span><span class='st'>"lightblue"</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span>x<span class='op'>=</span><span class='st'>"Datum"</span>,y<span class='op'>=</span><span class='st'>"Anzahl Neuinfektionen"</span> <span class='op'>)</span>
+</code></pre>
+</div>
+</details>
+<p><img src="Testdaten_files/figure-html5/unnamed-chunk-3-1.png" width="960" /></p>
+</div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

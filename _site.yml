@@ -10,10 +10,10 @@ navbar:
     - text: "Gaming und..."
       menu:
       - text: "Covid-19"
-        href: ""
+        href: Testdaten.html
       - text: "---"
       - text: "Gaming in Deutschland"
-        href: Testdaten.html
+        href:
       - text: "---"
       - text: "Reaktionszeiten"
         href: ""
