@@ -1,7 +1,7 @@
 ---
-title: "Plot"
+title: "Gaming und Covid-19"
 description: |
-  Steamcharts
+  Wie Gaming dir zur Zeit der Covid-19 Pandemie helfen kann:
 site: distill::distill_website
 ---
 
@@ -35,6 +35,10 @@ SteamCharts <- read_csv(url("https://www.dropbox.com/s/i463nncn2a68xra/SteamChar
 
 ```
 
+# Die Covid-19 Pandemie:
+
+Neuinfektionen seid Februar 2020:
+
 ```{r, fig.height = 5, fig.width = 10}
 
 Testdata_05%>%
@@ -56,14 +60,29 @@ Testdata_Clean%>%
 ```{r}
 
 SteamCharts %>%
-  filter(gamename %in% c("Team Fortess 2", "Rust", "Dead by Daylight", "Destiny 2", "Grand Theft Auto V", "Terraria"), year %in% 2019:2020) %>% 
+  filter(gamename == "Grand Theft Auto V", year %in% 2019:2020) %>% 
   mutate(month = fct_relevel(month, "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December")) %>% 
+  mutate(month = recode(month, "January"="Jan", "February" = "Feb", "March" = "Mrz", "April"="Apr", "May"="Mai", "June"="Jun", "July"="Jul", "August"="Aug", "September"="Sep", "October"="Okt", "November"="Nov", "December"="Dez")) %>%
   ggplot(aes(x = month, y = avg, color = year)) +
   facet_wrap(vars(gamename)) +
-  coord_flip() +
+  scale_fill_manual(values=c("2019"="blue","2020"="red")) +
+  geom_point(size = 3)
+
+scale_color_continuous_sequential(palette="hawaii")
+scale_color_continuous(palette="hawaii")
+```
+
+```{r}
+SteamCharts %>%
+  filter(gamename == "Terraria", year %in% 2019:2020) %>% 
+  mutate(month = fct_relevel(month, "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December")) %>% 
+  mutate(month = recode(month, "January"="Jan", "February" = "Feb", "March" = "Mrz", "April"="Apr", "May"="Mai", "June"="Jun", "July"="Jul", "August"="Aug", "September"="Sep", "October"="Okt", "November"="Nov", "December"="Dez")) %>%
+  ggplot(aes(x = month, y = avg, color = year)) +
+  facet_wrap(vars(gamename)) +
   scale_color_continuous_sequential(palette = "Batlow") +
   geom_point(size = 3)
 ```
+
 
 ```{r}
 
