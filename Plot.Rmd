@@ -6,7 +6,7 @@ site: distill::distill_website
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE)
 library(tidyverse)
 library(lubridate)
 library(gganimate)
@@ -35,9 +35,7 @@ SteamCharts <- read_csv(url("https://www.dropbox.com/s/i463nncn2a68xra/SteamChar
 
 ```
 
-```{r fig.height = 5, fig.width = 10}
-
-
+```{r, fig.height = 5, fig.width = 10}
 
 Testdata_05%>%
   filter(location=="Germany") -> Testdata_GER
@@ -68,7 +66,7 @@ SteamCharts %>%
 ```
 
 ```{r}
-SteamCharts <- read_csv(url("https://www.dropbox.com/s/i463nncn2a68xra/SteamCharts.csv?raw=1")) 
+
 SteamCharts %>%
   filter(gamename == "Counter-Strike: Global Offensive", year %in% 2019:2020) %>% 
   mutate(month = fct_relevel(month, "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December")) %>% 
