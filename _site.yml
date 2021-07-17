@@ -13,10 +13,10 @@ navbar:
         href: Plot.html
       - text: "---"
       - text: "Gaming in Deutschland"
-        href: ""
+        href: Gaming_in_Deutschland.html
       - text: "---"
       - text: "Reaktionszeiten"
-        href: ""
+        href: Reaktionszeiten.html
       - text: "---"
       - text: "Aggressionsprobleme"
         href: ""
