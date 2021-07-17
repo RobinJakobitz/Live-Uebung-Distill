@@ -1,6 +1,6 @@
 ---
 title: "Alina Keuter B.A."
-image: "Alina.jpeg"
+image: "Alina.jpg"
 links:
   - label: GitHub
     url: "https://github.com/AlinaKeuter"
