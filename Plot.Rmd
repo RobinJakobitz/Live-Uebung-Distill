@@ -40,7 +40,7 @@ SteamCharts <- read_csv(url("https://www.dropbox.com/s/i463nncn2a68xra/SteamChar
 
 # Die Covid-19 Pandemie:
 
-Neuinfektionen seid Februar 2020:
+Neuinfektionen seit Februar 2020:
 
 ```{r, fig.height = 5, fig.width = 10}
 
@@ -70,7 +70,7 @@ Testdata_Cleaner%>%
   geom_line(color="midnightblue") +
   labs(title = "Covid-19 Neuinfektionen im Jahre 2020",x=NULL,y="Anzahl Neuinfektionen" ) 
 ```
-#Covid-19
+# Gaming während der Pandemie
 
 ```{r}
 SteamCharts$year <- as.character(SteamCharts$year)
@@ -122,4 +122,7 @@ SteamCharts %>%
                   
                   ")
 ```
+# Gaming rettet dein Leben x2
 
+1. Wenn du Zuhause bleibst, ist das Risiko dich anzustecken geringer.
+2. Gaming hilft dir dabei der Langeweile Zuhause zu entkommen.

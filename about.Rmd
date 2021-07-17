@@ -1,7 +1,8 @@
 ---
 title: "About this site"
 description: |
-  Unser Projekt: Gaming oder so
+  Unser Projekt:
+  
 ---
 
 ```{r setup, include=FALSE}
