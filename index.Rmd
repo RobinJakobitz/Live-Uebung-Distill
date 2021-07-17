@@ -1,7 +1,7 @@
 ---
-title: "Gaming rettet Leben"
+title: "Gaming kann dein Leben bereichern"
 description: |
-  Statistiken zu positiven Auswirkungen von Gaming auf dein Leben.
+  Wir zeigen dir wie Gaming dir helfen und deinen Alltag auflockern kann.
 site: distill::distill_website
 ---
 
