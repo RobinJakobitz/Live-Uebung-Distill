@@ -33,6 +33,8 @@ Testdata_05 <- read_csv(url("https://www.dropbox.com/s/ibi9wdked5btmse/owid-covi
 
 SteamCharts <- read_csv(url("https://www.dropbox.com/s/i463nncn2a68xra/SteamCharts.csv?raw=1")) 
 
+
+
 ```
 
 # Die Covid-19 Pandemie:
@@ -41,35 +43,47 @@ Neuinfektionen seid Februar 2020:
 
 ```{r, fig.height = 5, fig.width = 10}
 
-Testdata_05%>%
-  filter(location=="Germany") -> Testdata_GER
+#Testdata_05%>%
+  #filter(location=="Germany") -> Testdata_GER
 
-Testdata_GER%>%
-  filter(date != "2020-12-30")%>%
-  filter(date != "2021-01-07") -> Testdata_Clean
+#Testdata_GER%>%
+  #filter(date != "2020-12-30")%>%
+  #filter(date != "2021-01-07") -> Testdata_Clean
 
-Testdata_Clean%>%
-  ggplot(aes(x=date,y=new_cases)) +
-  theme_classic()+
-  geom_line(color="lightblue") +
-  labs(x="Datum",y="Anzahl Neuinfektionen" )
+#Testdata_Clean%>%
+  #ggplot(aes(x=date,y=new_cases)) +
+  #theme_minimal()+
+  #geom_line(color="midnightblue") +
+  #labs(x="Datum",y="Anzahl Neuinfektionen" )
   
   
 ```
 
+```{r, fig.height = 5, fig.width = 10}
+
+Testdata_Clean%>% slice(1:342) -> Testdata_Cleaner
+
+Testdata_Cleaner%>%
+  ggplot(aes(x=date,y=new_cases)) +
+  theme_minimal()+
+  geom_line(color="midnightblue") +
+  labs(titel = "",x="Datum",y="Anzahl Neuinfektionen" ) 
+```
+
 ```{r}
+SteamCharts$year <- as.character(SteamCharts$year)
 
 SteamCharts %>%
   filter(gamename == "Grand Theft Auto V", year %in% 2019:2020) %>% 
   mutate(month = fct_relevel(month, "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December")) %>% 
   mutate(month = recode(month, "January"="Jan", "February" = "Feb", "March" = "Mrz", "April"="Apr", "May"="Mai", "June"="Jun", "July"="Jul", "August"="Aug", "September"="Sep", "October"="Okt", "November"="Nov", "December"="Dez")) %>%
   ggplot(aes(x = month, y = avg, color = year)) +
-  facet_wrap(vars(gamename)) +
-  scale_fill_manual(values=c("2019"="blue","2020"="red")) +
-  geom_point(size = 3)
+  scale_color_manual(values=c("2020"="midnightblue","2019"="darkgrey")) +
+  geom_point(size = 3) +
+  theme_minimal()+
+  labs(x=NULL,y="durschnittliche Spieleranzahl in Tausend",color="Jahr") +
+  scale_y_continuous(limits=c(0,150000), breaks=c(0,50000,100000,150000),labels = c("0", "50","100", "150")) -> Plot_A
 
-scale_color_continuous_sequential(palette="hawaii")
-scale_color_continuous(palette="hawaii")
 ```
 
 ```{r}
@@ -78,9 +92,11 @@ SteamCharts %>%
   mutate(month = fct_relevel(month, "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December")) %>% 
   mutate(month = recode(month, "January"="Jan", "February" = "Feb", "March" = "Mrz", "April"="Apr", "May"="Mai", "June"="Jun", "July"="Jul", "August"="Aug", "September"="Sep", "October"="Okt", "November"="Nov", "December"="Dez")) %>%
   ggplot(aes(x = month, y = avg, color = year)) +
-  facet_wrap(vars(gamename)) +
-  scale_color_continuous_sequential(palette = "Batlow") +
-  geom_point(size = 3)
+  scale_color_manual(values=c("2020"="midnightblue","2019"="darkgrey"))  +
+  geom_point(size = 3) +
+  theme_minimal()+
+  labs(x=NULL,y="durschnittliche Spieleranzahl in Tausend",color="Jahr") +
+  scale_y_continuous(limits=c(0,150000), breaks=c(0,50000,100000,150000),labels = c("0", "50","100", "150")) -> Plot_B
 ```
 
 
@@ -89,11 +105,13 @@ SteamCharts %>%
 SteamCharts %>%
   filter(gamename == "Counter-Strike: Global Offensive", year %in% 2019:2020) %>% 
   mutate(month = fct_relevel(month, "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December")) %>% 
+  mutate(month = recode(month, "January"="Jan", "February" = "Feb", "March" = "Mrz", "April"="Apr", "May"="Mai", "June"="Jun", "July"="Jul", "August"="Aug", "September"="Sep", "October"="Okt", "November"="Nov", "December"="Dez")) %>%
   ggplot(aes(x = month, y = avg, color = year)) +
-  facet_wrap(vars(gamename)) +
-  coord_flip() +
-  scale_color_continuous_sequential(palette = "Batlow") +
-  geom_point(size = 3)
+  scale_color_manual(values=c("2020"="midnightblue","2019"="darkgrey"))  +
+  geom_point(size = 3)+
+  theme_minimal()+
+  labs(x=NULL,y="durschnittliche Spieleranzahl in Tausend",color="Jahr") +
+  scale_y_continuous(limits=c(300000,900000), breaks=c(300000,400000,500000,600000,700000,800000,900000),labels = c("300", "400","500", "600","700","800","900"))
 ```
 
 

@@ -1,0 +1,41 @@
+---
+title: "Gaming in Deutschland"
+description: |
+  Wie es in Deutschland um Gaming steht:
+site: distill::distill_website
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(tidyverse)
+library(lubridate)
+library(gganimate)
+library(gifski)
+library(gapminder)
+library(colorspace)
+library(distill)
+library(ggplot2)
+library(ggthemes)
+```
+
+```{r}
+#März 2020 - 63% increase games sold worldwide
+
+read_csv("data/Sales_worldwide.csv") -> Data_Sales
+
+Data_Sales
+
+#März 2020 increase time spent
+read_csv("data/Time_increase.csv") -> Data_Timeinc
+
+Data_Timeinc
+
+#März 2020 Stunden pro Woche
+read_csv("data/Time_spent.csv") -> Data_Time
+
+Data_Time
+
+
+```
+
+
