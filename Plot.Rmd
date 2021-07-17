@@ -16,6 +16,7 @@ library(colorspace)
 library(distill)
 library(ggplot2)
 library(ggthemes)
+library(patchwork)
 ```
 
 ```{r}
@@ -43,12 +44,12 @@ Neuinfektionen seid Februar 2020:
 
 ```{r, fig.height = 5, fig.width = 10}
 
-#Testdata_05%>%
-  #filter(location=="Germany") -> Testdata_GER
+Testdata_05%>%
+  filter(location=="Germany") -> Testdata_GER
 
-#Testdata_GER%>%
-  #filter(date != "2020-12-30")%>%
-  #filter(date != "2021-01-07") -> Testdata_Clean
+Testdata_GER%>%
+  filter(date != "2020-12-30")%>%
+  filter(date != "2021-01-07") -> Testdata_Clean
 
 #Testdata_Clean%>%
   #ggplot(aes(x=date,y=new_cases)) +
@@ -67,8 +68,9 @@ Testdata_Cleaner%>%
   ggplot(aes(x=date,y=new_cases)) +
   theme_minimal()+
   geom_line(color="midnightblue") +
-  labs(titel = "",x="Datum",y="Anzahl Neuinfektionen" ) 
+  labs(title = "Covid-19 Neuinfektionen im Jahre 2020",x=NULL,y="Anzahl Neuinfektionen" ) 
 ```
+#Covid-19
 
 ```{r}
 SteamCharts$year <- as.character(SteamCharts$year)
@@ -81,8 +83,9 @@ SteamCharts %>%
   scale_color_manual(values=c("2020"="midnightblue","2019"="darkgrey")) +
   geom_point(size = 3) +
   theme_minimal()+
-  labs(x=NULL,y="durschnittliche Spieleranzahl in Tausend",color="Jahr") +
-  scale_y_continuous(limits=c(0,150000), breaks=c(0,50000,100000,150000),labels = c("0", "50","100", "150")) -> Plot_A
+  theme(legend.position = "none")+
+  labs(title="Grand Theft Auto V",x=NULL,y="Durschnittliche Spieleranzahl in Tausend",color="Jahr") +
+  scale_y_continuous(limits=c(0,150000), breaks=c(0,50000,100000,150000),labels = c("0", "50","100", "150")) -> plot_1
 
 ```
 
@@ -95,10 +98,9 @@ SteamCharts %>%
   scale_color_manual(values=c("2020"="midnightblue","2019"="darkgrey"))  +
   geom_point(size = 3) +
   theme_minimal()+
-  labs(x=NULL,y="durschnittliche Spieleranzahl in Tausend",color="Jahr") +
-  scale_y_continuous(limits=c(0,150000), breaks=c(0,50000,100000,150000),labels = c("0", "50","100", "150")) -> Plot_B
+  labs(title="Terraria",x=NULL,y=NULL,color="Jahr") +
+  scale_y_continuous(limits=c(0,150000), breaks=c(0,50000,100000,150000),labels = c("0", "50","100", "150")) -> plot_2
 ```
-
 
 ```{r}
 
@@ -110,8 +112,14 @@ SteamCharts %>%
   scale_color_manual(values=c("2020"="midnightblue","2019"="darkgrey"))  +
   geom_point(size = 3)+
   theme_minimal()+
-  labs(x=NULL,y="durschnittliche Spieleranzahl in Tausend",color="Jahr") +
-  scale_y_continuous(limits=c(300000,900000), breaks=c(300000,400000,500000,600000,700000,800000,900000),labels = c("300", "400","500", "600","700","800","900"))
+  labs(title="Counter-Strike: Global Offensive",x=NULL,y="Durschnittliche Spieleranzahl in Tausend",color="Jahr") +
+  scale_y_continuous(limits=c(300000,900000), breaks=c(300000,400000,500000,600000,700000,800000,900000),labels = c("300", "400","500", "600","700","800","900")) -> plot_3
 ```
 
+```{r, fig.height = 10, fig.width = 10}
+(plot_1 + plot_2)/plot_3 +
+  plot_annotation(title = "Beliebte Spiele im Vergleich: Durchschnittliche Spieleranzahl pro Monat
+                  
+                  ")
+```
 
