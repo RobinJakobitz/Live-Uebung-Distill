@@ -15,11 +15,11 @@ library(postcards)
 ```
 
 ![](images/pexels-cottonbro-4009598.jpg)
-In Deutschland sind 40% der Bevölkerung Gamer, werde jetzt Teil der Community. Lies mehr
+In Deutschland sind 40% der Bevölkerung Gamer, werde jetzt Teil der Community. [Lies mehr](https://pro-gamer.netlify.app/gaming_in_deutschland)
 
 ![](images/pexels-anete-lusina-4792723.jpg)
 
-Gaming kann Dir zu Zeiten der Covid-19 Pandemie doppelt helfen. [Lies mehr](https://60f2f0aab8af0000076144e6--hungry-beaver-dc6a87.netlify.app/plot)
+Gaming kann Dir zu Zeiten der Covid-19 Pandemie doppelt helfen. [Lies mehr](https://pro-gamer.netlify.app/plot)
 
 ![](images/pexels-cottonbro-4009590.jpg)
 

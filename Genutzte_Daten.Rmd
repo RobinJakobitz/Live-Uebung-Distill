@@ -1,0 +1,24 @@
+---
+title: "Genutzte Daten"
+description: 
+  Unsere Quellen und Referenzen
+site: distill::distill_website
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Quellen:
+
+Homepage:
+[Pexels](https://www.pexels.com/de-de/) \n
+
+---
+
+Gaming in Deutschland:
+["Immer mehr Menschen ab 60 Jahren spielen Games"](https://www.game.de/immer-mehr-menschen-ab-60-jahren-spielen-games/) \n
+
+---
+
+Datensätze:

@@ -22,7 +22,12 @@ navbar:
         href: ""
       - text: "---"
     - text: "Unser Projekt"
-      href: about.html
+      menu:
+      - text: "Unsere Idee"
+        href: about.html
+      - text: "---"
+      - text: "Genutzte Daten"
+        href: Genutzte_Daten.html
     - text: "Unser Team"
       menu:
       - text: "Robin Jakobitz"
