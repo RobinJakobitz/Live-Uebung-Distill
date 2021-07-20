@@ -9,11 +9,11 @@ navbar:
   right:
     - text: "Gaming und..."
       menu:
-      - text: "Covid-19"
-        href: Plot.html
-      - text: "---"
       - text: "Gaming in Deutschland"
         href: Gaming_in_Deutschland.html
+      - text: "---"
+      - text: "Covid-19"
+        href: Plot.html
       - text: "---"
       - text: "Reaktionszeiten"
         href: Reaktionszeiten.html

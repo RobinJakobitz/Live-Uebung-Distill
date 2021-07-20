@@ -1,7 +1,7 @@
 ---
 title: "Gaming in Deutschland"
 description: |
-  Wie es in Deutschland um Gaming steht:
+  Wie es in Deutschland um Gaming steht
 site: distill::distill_website
 ---
 
@@ -16,6 +16,7 @@ library(colorspace)
 library(distill)
 library(ggplot2)
 library(ggthemes)
+library(ggforce)
 ```
 
 ```{r}
@@ -23,19 +24,75 @@ library(ggthemes)
 
 read_csv("data/Sales_worldwide.csv") -> Data_Sales
 
-Data_Sales
-
 #März 2020 increase time spent
 read_csv("data/Time_increase.csv") -> Data_Timeinc
 
-Data_Timeinc
 
 #März 2020 Stunden pro Woche
 read_csv("data/Time_spent.csv") -> Data_Time
 
-Data_Time
 
+
+#Genderverteilung Gaming Deutschland
+read_csv("data/Gender_Germany.csv") -> Data_Gender
+
+#ALtersverteilung Gaming Deutschland
+read_csv("data/Age_Germany_2020.csv") -> Data_Age
+
+#Videospieler Deutschland
+read_csv("data/Number_Players_Germany.csv") -> Data_Amount
 
 ```
 
+# Die Gaming Community in Deutschland
+
+Mehr als 34 Millionen Menschen in ganz Deutschland sind bereits Teil der Gaming Community. 
+[Lies mehr](https://www.game.de/immer-mehr-menschen-ab-60-jahren-spielen-games/) \n
+
+Wer ist Teil der Community?
+
+```{r,fig.height = 5, fig.width = 10}
+
+Data_Age%>%
+    arrange(Alter) %>% # sort so pie slices end up sorted
+  mutate(
+    end_angle = 2*pi*cumsum(`number in millions`)/sum(`number in millions`),   # ending angle for each pie slice
+    start_angle = lag(end_angle, default = 0),   # starting angle for each pie slice
+    mid_angle = 0.5*(start_angle + end_angle),   # middle of each pie slice, for text labels
+    # horizontal and vertical justifications for outer labels
+    hjust = ifelse(mid_angle > pi, 1, 0),
+    vjust = ifelse(mid_angle < pi/2 | mid_angle > 3*pi/2, 0, 1)
+  ) -> Data_Age_sorted
+
+
+Data_Age_sorted %>%
+  mutate(Alter= fct_relevel(Alter,"0-9","10-19","20-29","30-39", "40-49", "50-59","60+")) -> Data_Age_Mutated
+  
+Data_Age_Mutated%>% 
+  ggplot(aes(
+    x0 = 0,
+    y0 = 0,
+    r0 = 0,
+    r = 10,
+    start = start_angle,
+    end= end_angle,
+    amount= `number in millions`,
+    fill = Alter
+  )) +
+  geom_arc_bar() +
+  geom_text( 
+    aes(
+      x = 6.5 * sin(mid_angle),
+      y = 6.5 * cos(mid_angle),
+      label = `number in millions`,
+      hjust=hjust,
+      vjust=vjust
+    ) 
+  ) +
+  coord_fixed(xlim = c(-10,10)) +
+  theme_void() +
+  labs(title="Altersverteilung in Millionen")
+```
+
+Es gibt Gaming Angebote für Spieler jeden Alters und jeglicher Spielertypen. Ob Pro-Gamer oder Casual, Du kannst ein für Dich passendes Spieleerlebnis finden.
 

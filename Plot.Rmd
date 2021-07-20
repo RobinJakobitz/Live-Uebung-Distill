@@ -1,7 +1,7 @@
 ---
 title: "Gaming und Covid-19"
 description: |
-  Wie Gaming dir zur Zeit der Covid-19 Pandemie helfen kann:
+  Wie Gaming Dir zur Zeit der Covid-19 Pandemie helfen kann
 site: distill::distill_website
 ---
 
@@ -122,7 +122,7 @@ SteamCharts %>%
                   
                   ")
 ```
-# Gaming rettet dein Leben x2
+# Gaming rettet Dein Leben x2
 
-1. Wenn du Zuhause bleibst, ist das Risiko dich anzustecken geringer.
-2. Gaming hilft dir dabei der Langeweile Zuhause zu entkommen.
+1. Wenn Du Zuhause bleibst, ist das Risiko dich anzustecken geringer.
+2. Gaming hilft Dir dabei, der Langeweile Zuhause zu entkommen.
