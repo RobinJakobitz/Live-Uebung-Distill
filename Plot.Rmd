@@ -17,6 +17,12 @@ library(distill)
 library(ggplot2)
 library(ggthemes)
 library(patchwork)
+
+library(coronavirus)
+devtools::install_github("RamiKrispin/coronavirus")
+update_dataset()
+#install.packages("coronavirus")
+coronavirus
 ```
 
 ```{r}

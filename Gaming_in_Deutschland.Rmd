@@ -87,7 +87,7 @@ Data_Time %>%
   scale_fill_manual(values = c("grey","midnightblue","grey","grey","grey","grey","grey", "grey"))+
   theme(legend.position = "none")+
   labs(title="Spielzeit in verschiedenen Ländern",
-       x = "Spielzeit pro Woche in Stunden",
+       x = "Wöchentliche Spielzeit in Stunden",
        y = NULL)+
   geom_col()
 ```
