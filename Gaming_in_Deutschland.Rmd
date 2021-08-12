@@ -53,46 +53,42 @@ Wer ist Teil der Community?
 
 ```{r,fig.height = 5, fig.width = 10}
 
-Data_Age%>%
-    arrange(Alter) %>% # sort so pie slices end up sorted
-  mutate(
-    end_angle = 2*pi*cumsum(`number in millions`)/sum(`number in millions`),   # ending angle for each pie slice
-    start_angle = lag(end_angle, default = 0),   # starting angle for each pie slice
-    mid_angle = 0.5*(start_angle + end_angle),   # middle of each pie slice, for text labels
-    # horizontal and vertical justifications for outer labels
-    hjust = ifelse(mid_angle > pi, 1, 0),
-    vjust = ifelse(mid_angle < pi/2 | mid_angle > 3*pi/2, 0, 1)
-  ) -> Data_Age_sorted
 
-
-Data_Age_sorted %>%
+Data_Age %>%
   mutate(Alter= fct_relevel(Alter,"0-9","10-19","20-29","30-39", "40-49", "50-59","60+")) -> Data_Age_Mutated
   
-Data_Age_Mutated%>% 
-  ggplot(aes(
-    x0 = 0,
-    y0 = 0,
-    r0 = 0,
-    r = 10,
-    start = start_angle,
-    end= end_angle,
-    amount= `number in millions`,
-    fill = Alter
-  )) +
-  geom_arc_bar() +
+Data_Age_Mutated %>%
+  ggplot(aes(x = Alter, y = Anzahl, fill = Alter))+
+  geom_col() +
   geom_text( 
     aes(
-      x = 6.5 * sin(mid_angle),
-      y = 6.5 * cos(mid_angle),
-      label = `number in millions`,
-      hjust=hjust,
-      vjust=vjust
-    ) 
-  ) +
-  coord_fixed(xlim = c(-10,10)) +
-  theme_void() +
-  labs(title="Altersverteilung in Millionen")
+      label = `Anzahl`,
+      position= "dodge", vjust=3.5, size = 3), color='white'
+    ) +
+  theme_minimal() +
+  scale_fill_manual(values = c("midnightblue","midnightblue","midnightblue","midnightblue","midnightblue","midnightblue","midnightblue"))+
+  theme(legend.position = "none")+
+  labs(title="Gamer pro Altersgruppe",
+       x = "Altersgruppe",
+       y = "Anzahl in Millionen")
 ```
 
 Es gibt Gaming Angebote für Spieler jeden Alters und jeglicher Spielertypen. Ob Pro-Gamer oder Casual, Du kannst ein für Dich passendes Spieleerlebnis finden.
 
+Noch irgendwas mit Geschlecht 
+
+
+```{r}
+Data_Time %>%
+  filter(country!="Global") %>%
+  mutate(country = fct_relevel(country, "Südkorea", "Deutschland", "Großbritannien", "USA", "Indonesien", "Indien", "Vietnam", "China")) %>%
+  ggplot(aes(x = timeinh, y = country, fill = country))+
+  theme_minimal()+
+  scale_fill_manual(values = c("grey","midnightblue","grey","grey","grey","grey","grey", "grey"))+
+  theme(legend.position = "none")+
+  labs(title="Spielzeit in verschiedenen Ländern",
+       x = "Spielzeit pro Woche in Stunden",
+       y = NULL)+
+  geom_col()
+```
+Amount, Timeincrease, Sales
