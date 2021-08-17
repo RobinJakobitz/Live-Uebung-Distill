@@ -18,11 +18,11 @@ library(ggplot2)
 library(ggthemes)
 library(patchwork)
 
-library(coronavirus)
-devtools::install_github("RamiKrispin/coronavirus")
-update_dataset()
+#library(coronavirus)
+#devtools::install_github("RamiKrispin/coronavirus")
+#update_dataset()
 #install.packages("coronavirus")
-coronavirus
+#coronavirus
 ```
 
 ```{r}
@@ -38,6 +38,8 @@ coronavirus
 
 Testdata_05 <- read_csv(url("https://www.dropbox.com/s/ibi9wdked5btmse/owid-covid-data.csv?raw=1"))
 
+Testdata_06 <- read_csv("data/daily-tests-and-daily-new-confirmed-covid-cases.csv")
+
 SteamCharts <- read_csv(url("https://www.dropbox.com/s/i463nncn2a68xra/SteamCharts.csv?raw=1")) 
 
 
@@ -46,7 +48,21 @@ SteamCharts <- read_csv(url("https://www.dropbox.com/s/i463nncn2a68xra/SteamChar
 
 # Die Covid-19 Pandemie:
 
-Neuinfektionen seit Februar 2020:
+Neuinfektionen weltweit seit Anfang 2020:
+
+```{r, fig.height = 5, fig.width = 10}
+Testdata_06%>%
+  filter(Entity == "World") %>%
+  slice(1:343) %>%
+  ggplot(aes(x=Day,y=Daily_cases)) +
+  theme_minimal()+
+  geom_line(color="midnightblue") +
+  labs(title = "Covid-19 Neuinfektionen im Jahre 2020",x=NULL,y="Anzahl Neuinfektionen" ) +
+  scale_y_continuous(limits=c(0,700000), breaks=c(0,200000,400000,600000,800000),labels = c("0","200000","400000","600000"," "))
+```
+
+
+Neuinfektionen in Deutschland seit Anfang 2020:
 
 ```{r, fig.height = 5, fig.width = 10}
 
@@ -62,11 +78,6 @@ Testdata_GER%>%
   #theme_minimal()+
   #geom_line(color="midnightblue") +
   #labs(x="Datum",y="Anzahl Neuinfektionen" )
-  
-  
-```
-
-```{r, fig.height = 5, fig.width = 10}
 
 Testdata_Clean%>% slice(1:342) -> Testdata_Cleaner
 
@@ -76,6 +87,10 @@ Testdata_Cleaner%>%
   geom_line(color="midnightblue") +
   labs(title = "Covid-19 Neuinfektionen im Jahre 2020",x=NULL,y="Anzahl Neuinfektionen" ) 
 ```
+
+Covid-19 bad, deshalb Zuhause bleiben um niemanden anzustekcen oder sich nicht anzustecken.
+Reglenungen verbieten das treffen mit Menschen, warum dann nicht einfach virtuell:
+
 # Gaming während der Pandemie
 
 ```{r}
@@ -89,9 +104,11 @@ SteamCharts %>%
   scale_color_manual(values=c("2020"="midnightblue","2019"="darkgrey")) +
   geom_point(size = 3) +
   theme_minimal()+
-  theme(legend.position = "none")+
   labs(title="Grand Theft Auto V",x=NULL,y="Durschnittliche Spieleranzahl in Tausend",color="Jahr") +
-  scale_y_continuous(limits=c(0,150000), breaks=c(0,50000,100000,150000),labels = c("0", "50","100", "150")) -> plot_1
+  scale_y_continuous(limits=c(0,150000), breaks=c(0,50000,100000,150000),labels = c("0", "50","100", "150")) +
+  theme(axis.title.x=element_blank(),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank()) -> plot_1
 
 ```
 
@@ -104,8 +121,11 @@ SteamCharts %>%
   scale_color_manual(values=c("2020"="midnightblue","2019"="darkgrey"))  +
   geom_point(size = 3) +
   theme_minimal()+
-  labs(title="Terraria",x=NULL,y=NULL,color="Jahr") +
-  scale_y_continuous(limits=c(0,150000), breaks=c(0,50000,100000,150000),labels = c("0", "50","100", "150")) -> plot_2
+  labs(title="Terraria",x=NULL,y="Durschnittliche Spieleranzahl in Tausend",color="Jahr") +
+  scale_y_continuous(limits=c(0,150000), breaks=c(0,50000,100000,150000),labels = c("0", "50","100", "150")) +
+  theme(axis.title.x=element_blank(),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank()) -> plot_2
 ```
 
 ```{r}
@@ -123,10 +143,10 @@ SteamCharts %>%
 ```
 
 ```{r, fig.height = 10, fig.width = 10}
-(plot_1 + plot_2)/plot_3 +
+plot_1 / plot_2/plot_3 +
   plot_annotation(title = "Beliebte Spiele im Vergleich: Durchschnittliche Spieleranzahl pro Monat
                   
-                  ")
+   ")
 ```
 # Gaming rettet Dein Leben x2
 
