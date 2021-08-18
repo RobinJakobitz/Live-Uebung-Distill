@@ -1,7 +1,7 @@
 ---
 title: "Gaming in Deutschland"
 description: |
-  Wie es in Deutschland um Gaming steht
+  Hier ein kleiner Überblick darüber, wie es in Deutschland aktuell um Gaming steht:
 site: distill::distill_website
 ---
 
@@ -44,12 +44,16 @@ read_csv("data/Number_Players_Germany.csv") -> Data_Amount
 
 ```
 
-# Die Gaming Community in Deutschland
+# Die Gaming-Community in Deutschland
 
-Mehr als 34 Millionen Menschen in ganz Deutschland sind bereits Teil der Gaming Community. 
+Insgesamt sind schon mehr als 34 Millionen Menschen in ganz Deutschland Teil der Gaming-Community. 
 [Lies mehr](https://www.game.de/immer-mehr-menschen-ab-60-jahren-spielen-games/) \n
 
-Wer ist Teil der Community?
+
+Hinter dieser Zahl verbirgt sich eine große Vielfalt von Menschen, die alle das gleiche Interesse teilen. \n
+
+**Wer ist Teil der Community?**
+![](images/pexels-tima-miroshnichenko-5698406.jpg)
 
 ```{r,fig.height = 5, fig.width = 10}
 
@@ -73,11 +77,14 @@ Data_Age_Mutated %>%
        y = "Anzahl in Millionen")
 ```
 
-Es gibt Gaming Angebote für Spieler jeden Alters und jeglicher Spielertypen. Ob Pro-Gamer oder Casual, Du kannst ein für Dich passendes Spieleerlebnis finden.
+Alte Klischees wie "*Gamer sind alle männlich.*" oder "*Nur Kinder spielen Videospiele.*" sind schon lange nicht mehr aktuell. Mittlerweile ist sowohl die Alters- als auch die Geschlechterverteilung sehr ausgeglichen. Die Visualisierung oben zeigt deutlich, dass Gamer sich nicht nur unter den jüngeren Altersgruppen befinden. Mehr als fünf Millionen über 60-jährige verbringen ihre Zeit gerne mit Videospielen. 
+Ebenso wenig kann man noch behaupten, dass die Gaming-Community heutzutage männlich dominiert sei. In den letzten drei Jahren machte der Anteil von Mädchen und Frauen konstant 48% der Gaming-Szene aus.
 
-Noch irgendwas mit Geschlecht 
+**Du kannst dir also sicher sein, dass die Community vielfältig ist! Jeder ist willkommen, völlig unabhängig von Alter, Geschlecht oder Nationalität.**
 
 
+
+# Zahlen und Fakten der deutschen Gaming-Industrie
 ```{r}
 Data_Time %>%
   filter(country!="Global") %>%
@@ -91,4 +98,6 @@ Data_Time %>%
        y = NULL)+
   geom_col()
 ```
-Amount, Timeincrease, Sales
+Im Vergleich zu anderen Ländern verbringen die Deutschen wöchentlich noch relativ wenig Zeit mit Videospielen. Durchschnittlich etwa sieben Stunden.
+
+Timeincrease, Sales

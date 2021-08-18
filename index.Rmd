@@ -1,7 +1,7 @@
 ---
-title: "Gaming kann dein Leben bereichern"
+title: "Gaming kann Dein Leben bereichern"
 description: |
-  Wir zeigen Dir, wie Gaming Dir helfen kann, um Deinen Alltag aufzulockern.
+  Wir zeigen Dir, dass Gaming in vielen verschiedenen Hinsichten einen positiven Einluss auf dein Leben haben kann.
 site: distill::distill_website
 ---
 
@@ -15,13 +15,17 @@ library(postcards)
 ```
 
 ![](images/pexels-cottonbro-4009598.jpg)
-In Deutschland sind 40% der Bevölkerung Gamer, werde jetzt Teil der Community. [Lies mehr](https://pro-gamer.netlify.app/gaming_in_deutschland)
+Wusstest Du, dass in Deutschland 40% der Bevölkerung Gamer sind? [Lies mehr](https://pro-gamer.netlify.app/gaming_in_deutschland)\n
+Auf dieser Website wollen wir Dir zeigen, auf wie viele verschiedene Arten Gaming Dein Leben positiv beeinflussen kann und wieso auch Du Teil der Community werden solltest.
 
 ![](images/pexels-anete-lusina-4792723.jpg)
 
-Gaming kann Dir zu Zeiten der Covid-19 Pandemie doppelt helfen. [Lies mehr](https://pro-gamer.netlify.app/plot)
+Unter den aktuellen Umständen der Covid-19 Pandemie kann Gaming dazu beitragen, dass Du und Deine Mitmenschen gesund bleiben, ohne dabei Langeweile aufkommen zu lassen. [Lies mehr](https://pro-gamer.netlify.app/plot)
 
 ![](images/pexels-cottonbro-4009590.jpg)
 
 Gaming baut Deine Reflexe aus. Lies mehr
 
+![](images/pexels-matilda-wormwood-4101004.jpg)
+
+Gaming fördert keine Aggressionen. Lies mehr

@@ -4,7 +4,7 @@ title: "Home"
 theme: theme.css
 navbar:
   logo:
-    image: "Images/f5f5d2b965532b1602f4c1bb02502efe.jpg"
+    image: "Images/Trash_Logo.png"
   search: true
   right:
     - text: "Gaming und..."
