@@ -1,0 +1,41 @@
+---
+title: "Physiche Vorteile durch Gaming"
+description: "Hier stellen wir vor, was für physische Upgrades dir Gaming geben kann"
+site: distill::distill_website
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Manche Gamer nutzten das Spielen um sich zu entspannen, während es für andere eine echte sportliche Herausforderung birgt.
+Ein Gamer zu sein heißt dabei nicht nur seinen virtuellen Spielecharakter aufzubauen, es hift Dir gleichzeitig etwas für dein Gehirn und deinen Körper zu tun. \n
+
+Es gibt verschiedene Bereiche, in denen Du durch Gaming körperliche Vorteile gegenüber Nicht-Spielern ausbilden kannst. \n
+
+# Motorik & Koordination
+
+![](images/pexels-cottonbro-controller-greifen.jpg)
+
+Die australische Universität Seakin zeigte in einer Studie, dass Gamer bessere motorische Fähigkeiten aufweisen als Nicht-Spieler und gleichzeitig auch ihre Hand-Auge-Koordination deutlich verbessert ist. Durch das Training mit einem Controller oder der Tastatur schaffen es Gamer auch bei alltäglichen Aufgaben besser abzuschneiden. Aufgaben die Feinmotorik vorraussetzen, oder sowohl visuelle als auch haptische Interaktion vorraussetzten werden so zum Kinderspiel. \n
+
+# Sehschärfe
+
+![](images/pexels-julia-m-cameron-4145355.jpg)
+
+Entgegen dem verbreiteten Glauben, dass Videospiele den Augen schaden, bewiesen Wissenschaftler einer New Yorker Universität bereits im Jahre 2007, dass Gaming zu einer Verbesserung der Sehkraft und der räumlichen Auflösung führen kann. Dabei solltest DU trotzdem deine Spielzeit passend regulieren. Mit einer guten Balance kannst du deine Sehkraft jedoch verbessern. In der damaligen Studie konnten die Spieler nach insgesamt 30 Stunden Spielzeit ihre Farb und Kontrastunterscheidung um fast 50 Prozent verbessern. \n
+
+# Schmerzempfinden
+
+![](Images/pexels-rodnae-productions-8097940.jpg)
+
+Auch wenn Gaming dich nicht unverwundbar macht, kann es doch bei der Bewältigung von Schmerzen helfen. Gamer können sich oft einfacher von unangenehmen Gefühlen wie Schmerzen ablenken. Dabei hilft nicht nur das Spielen direkt als Ablenkung, Gamer können Schmerzen insgesamt besser verdrängen. Zusätzlich werden Videospiele in Schmerztherapien verwendet. Patienten gaben oft an nur noch gernige Schmerzen zu fühlen, wenn sie Videospielen spielten. \n
+
+# Bewegung
+
+Und wenn du nun immernoch denkst, dass Gaming schlecht für dich ist, und du selbst mit den genannten Vorteilen immer nur Zuhause sitzt, hier ein Tipp für dich:
+Es gibt bereits verschiedene Spiele die den Spieler motivieren nach draußen zu gehen und beim Spielen aktiv zu bleiben, während man mit anderen Gamern in Kontakt ist, beispielsweise [Pokemon Go](https://www.pokemon.com/de/app/pokemon-go/). Du kannst dabei aktiv etwas für deine Gesundheit tun, während du trotzdem weiter spielen kannst. \n
+
+![](Images/1920px-Pokémon_GO_logo.svg.png)
+
+

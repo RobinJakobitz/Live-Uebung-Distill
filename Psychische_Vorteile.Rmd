@@ -1,0 +1,11 @@
+---
+title: "Phsychische Vorteile durch Gaming"
+description: "Hier stellen wir vor, was für phsychischen Upgrades dir Gaming geben kann"
+site: distill::distill_website
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Lukas hier könntest du dann was einfüllen, vielleicht orientiert an der Seite Physische_Vorteile

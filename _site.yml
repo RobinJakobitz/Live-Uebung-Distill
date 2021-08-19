@@ -13,13 +13,13 @@ navbar:
         href: Gaming_in_Deutschland.html
       - text: "---"
       - text: "Covid-19"
-        href: Plot.html
+        href: Covid19_und_Gaming.html
       - text: "---"
-      - text: "Reaktionszeiten"
-        href: Reaktionszeiten.html
+      - text: "Physische Vorteile"
+        href: Physische_Vorteile.html
       - text: "---"
-      - text: "Aggressionsprobleme"
-        href: ""
+      - text: "Psychische Vorteile"
+        href: Psychische_Vorteile.html
       - text: "---"
     - text: "Unser Projekt"
       menu:

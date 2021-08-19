@@ -2,6 +2,7 @@
 title: "About this site"
 description: |
   Unser Projekt
+site: distill::distill_website
   
 ---
 
