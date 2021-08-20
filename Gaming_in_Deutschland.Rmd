@@ -98,6 +98,6 @@ Data_Time %>%
        y = NULL)+
   geom_col()
 ```
-Im Vergleich zu anderen Ländern verbringen die Deutschen wöchentlich noch relativ wenig Zeit mit Videospielen. Durchschnittlich etwa sieben Stunden.
-
-Timeincrease, Sales
+Im Vergleich zu anderen Ländern verbringen die Deutschen wöchentlich noch relativ wenig Zeit mit Videospielen. Durchschnittlich etwa sieben Stunden. (Aus welchem Jahr sind die Daten?)
+Allerdings zeigt sich, dass die durchschnittliche Zeit, die Deutsche mit Videospielen verbringen... (Wofür genau steht die 20?)
+Auch die Zahl der verkauften Spiele ist im Vergleich zum Vorjahr (also 2020 oder 2019?) um 63% gestiegen. Hier lässt sich ein Zusammenhang mit der Covid-19 Pandemie feststellen, die seit Anfang 2020 viele Lebensbereiche beeinflusst, darunter auch die Gaming-Industrie. [Lies mehr](https://pro-gamer.netlify.app/plot)

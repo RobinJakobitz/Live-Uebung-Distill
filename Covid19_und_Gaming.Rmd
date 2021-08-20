@@ -48,7 +48,7 @@ SteamCharts <- read_csv(url("https://www.dropbox.com/s/i463nncn2a68xra/SteamChar
 
 # Die Covid-19 Pandemie:
 
-Seit Anfang 2020 breitet sich das Coronavirs weltweit immer weiter aus. Den ersten stärkeren Anstieg von Neuinfektionen gab es dabei zwischen März und April 2020. 
+Seit Anfang 2020 breitet sich das Coronavirus weltweit immer weiter aus. Den ersten stärkeren Anstieg von Neuinfektionen gab es dabei zwischen März und April 2020. 
 
 ```{r, fig.height = 5, fig.width = 10}
 Testdata_06%>%
@@ -148,7 +148,7 @@ plot_1 / plot_2/plot_3 +
    ")
 ```
 
-Die Visualisierungen zeigen, dass die Spielerzahlen von beliebten Spielen auf Steam eine ähnliche Kurve bilden, wie die Corona-Neuinfektionen während des Jahres 2020. Als es im März und April besonders viele positive Fälle gab, war auch die Spieleranzahl auf Steam sehr hoch. Ebenso flachen beide Kurven im Sommer wieder ab. Man kann also annehmen, dass viele Menschen den Lockdown dazu genutzt haben, um Videospiele zu spielen. Aus gutem Grund!
+Die Visualisierungen zeigen, dass die Spielerzahlen von beliebten Spielen auf Steam eine ähnliche Kurve bilden wie die Corona-Neuinfektionen während des Jahres 2020. Als es im März und April besonders viele positive Fälle gab, war auch die Spieleranzahl auf Steam sehr hoch. Ebenso flachen beide Kurven im Sommer wieder ab. Man kann also annehmen, dass viele Menschen den Lockdown dazu genutzt haben, um Videospiele zu spielen. Aus gutem Grund!
 
 # Wie Gaming Dein Leben während der Covid-19 Pandemie doppelt bereichert
 
