@@ -8,4 +8,22 @@ site: distill::distill_website
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Lukas hier könntest du dann was einfüllen, vielleicht orientiert an der Seite Physische_Vorteile
+Dass Videospiele irgendwelche Auswirkungen auf die Psyche haben, würden selbst die wenigsten Hardcoregamer bestreiten. Dass sie aber etwa aggressiv machen oder die Gewaltbereitschaft erhöhen, wie es oft gerade in Bezug auf Ego-Shooter diskutiert wurde, bezweifeln viele. Schließlich spiele man auch als Kind mit Ritterfiguren und verkleide sich an Karneval als Cowboy mit Pistole, ein verhaltensauffälligeres und schwierigeres Kind werde man dadurch aber nicht. Aber greifen derlei Vergleiche oder setzen Videospiele tatsächlich andere, gefährliche Prozesse im Kopf im Gang? Oder können sie sich im Gegenteil sogar positiv auf die Psyche auswirken? \n
+
+# Gamer können schneller entscheiden
+
+In jedem guten Rollenspiel kommen Gamer irgendwann an den Punkt an, an dem sie eine wichtige Entscheidung in kürzester Zeit wählen müssen - was soll ihr Charakter in einer bestimmten Situation tun? 
+
+Laut einer Studie der Universität of Rochester entwickeln Gamer eine erhöhte Sensibilität für die Ereignisse in ihrer Umgebung. Das kann verschiedene Bereiche im Alltag treffen, beispielsweise das Autofahren, die Orientierung in unbekannten Gegenden oder das im Auge behalten von Freunden in einer Menschenmenge. Laut der Studie entscheiden Gamer 25% scheneller als Nicht-Gamer. \n
+
+# Gaming trainiert das Hirn
+
+Das Spielen bestimmter Spiele lässt die für räumliche Vorstellung, strategisches Planen und die Fingersteuerung zuständigen Gehirnregionen wachsen. Gaming schadet also nicht, sondern wirkt sich positiv auf die koginitiven Fähigkeiten aus. Die Neurowissenschaftlerin Simone Kühn am Max-Planck-Institut für Bildungsforschung in Berlin führte ein Experiment mit Teilnehmern über 65 Jahren durch. Das Ergebnis war verblüffend: Mit Computerspielen lassen sich nicht nur gezielt bestimmte Gehirnfunktionen trainieren. Aufgrund des höheren Alters der Teilnehmer steht auch fest, dass man den Abbauprozessen im Gehirn älterer Menschen entgegenwirken kann. \n
+
+# Gaming kann vor Vereinsamung schützen
+
+Gerade in Zeiten der Corona-Pandemie können kooperative Spiele dafür sorgen, dass Menschen sich  miteinander sprechen und sich zugehörig fühlen. So können auch in schwierigen Zeiten soziale Kontake und Interaktionen pflegen. \n
+
+# Alles eine Sache der Intensität
+
+Natürlich können wir nicht sagen, dass Computerspielen nur positive Auswirkungen hat und uns und unserer Psyche nur Gutes bringt. Besonders bei Kindern müssen wir natürlich darauf achten, dass ihr Leben nicht nur aus einer virtuellen Spielwelt besteht, sondern dass diese auch genug vom "Echten Leben" mitbekommen. Dennoch kann Gaming in vielen, vielleicht auch schwierigen Lebenssituationen helfen. Und wenn Gaming positive Effekte auf unsere Psyche hat, macht das Spielen doch gleich doppelt so viel Spaß!
