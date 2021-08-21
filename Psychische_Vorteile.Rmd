@@ -1,6 +1,6 @@
 ---
-title: "Phsychische Vorteile durch Gaming"
-description: "Hier stellen wir vor, was für phsychischen Upgrades dir Gaming geben kann"
+title: "Psychische Vorteile durch Gaming"
+description: "Hier stellen wir vor, was für psychischen Upgrades dir Gaming geben kann"
 site: distill::distill_website
 ---
 
