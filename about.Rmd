@@ -1,7 +1,7 @@
 ---
-title: "About this site"
+title: "Unser Projekt"
 description: |
-  Unser Projekt
+  Was wir versuchen mit unserer Website zu erreichen
 site: distill::distill_website
   
 ---
@@ -10,3 +10,10 @@ site: distill::distill_website
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+Wen wollen wir mit der Website erreichen? **Euch**, ja genau, damit seid Ihr alle gemeint. Egal ob Ihr bereits Gamer seid oder nicht und unabhängig von Eurem Alter, Geschlecht oder Nationalität. \n
+
+![](Images/pexels-stas-knop-1462725.jpg)
+
+Wenn Du bereits Gamer bist, kannst Du Dein Wissen hier ein bisschen auffrischen und die neuesten Informationen zu verschiedenen Gaming Themen lesen. \n
+
+Solltest Du noch kein Gamer sein, Dich aber trotzdem für Gaming interessieren, zeigen wir Dir, dass Videospiele gar nicht schädlich sind und was für Vorteile Gaming mit sich bringt.
