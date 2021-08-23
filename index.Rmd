@@ -15,7 +15,8 @@ library(postcards)
 ```
 
 ![](images/pexels-cottonbro-4009598.jpg)
-Wusstest Du, dass in Deutschland 40% der Bevölkerung Gamer sind? [Lies mehr](https://pro-gamer.netlify.app/gaming_in_deutschland) \n
+Wusstest Du, dass in Deutschland 40% der Bevölkerung Gamer sind? [Lies mehr](https://pro-gamer.netlify.app/gaming_in_deutschland)  \n
+
 Auf dieser Website wollen wir Dir zeigen, auf wie viele verschiedene Arten Gaming Dein Leben positiv beeinflussen kann und wieso auch Du Teil der Community werden solltest.
 
 ![](images/pexels-anete-lusina-4792723.jpg)
