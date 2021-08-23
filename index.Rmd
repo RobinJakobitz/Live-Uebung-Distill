@@ -14,18 +14,26 @@ library(postcards)
 
 ```
 
+# Gaming in Deutschland
+
 ![](images/pexels-cottonbro-4009598.jpg)
 Wusstest Du, dass in Deutschland 40% der Bevölkerung Gamer sind? [Lies mehr](https://pro-gamer.netlify.app/gaming_in_deutschland)  \n
 
 Auf dieser Website wollen wir Dir zeigen, auf wie viele verschiedene Arten Gaming Dein Leben positiv beeinflussen kann und wieso auch Du Teil der Community werden solltest.
 
+# Gaming und Covid-19
+
 ![](images/pexels-anete-lusina-4792723.jpg)
 
 Unter den aktuellen Umständen der Covid-19 Pandemie kann Gaming dazu beitragen, dass Du und Deine Mitmenschen gesund bleiben, ohne dabei Langeweile aufkommen zu lassen. [Lies mehr](https://pro-gamer.netlify.app/Covid19_und_Gaming)
 
+# Physische Vorteile durch Gaming
+
 ![](images/pexels-tima-miroshnichenko-5213138.jpg)
 
 Beim Gaming geht es nicht nur darum, deinen virtuellen Charakter aufzubauen. Das Spielen von Videospielen bringt auch Vorteile für Dich mit sich. Durch Gaming kannst du dir einige physische Upgrades holen. [Lies mehr](https://pro-gamer.netlify.app/Physische_Vorteile)
+
+# Psychische Vorteile durch Gaming
 
 ![](images/pexels-florenz-mendoza-5489395.jpg)
 Zusätzlich hilft dir Gaming auch beim upgraden deiner Gehirnleistungen. Gamer sind nicht nur virtuell, sondern auch neuronal besser vernetzt. [Lies mehr](https://pro-gamer.netlify.app/Psychische_Vorteile)

@@ -84,7 +84,7 @@ Ebenso wenig kann man noch behaupten, dass die Gaming-Community heutzutage männ
 ![](images/GD-Foto-Blog.jpg)
 
 # Zahlen und Fakten der deutschen Gaming-Industrie
-```{r}
+```{r, fig.height = 5, fig.width = 10}
 Data_Time %>%
   filter(country!="Global") %>%
   mutate(country = fct_relevel(country, "Südkorea", "Deutschland", "Großbritannien", "USA", "Indonesien", "Indien", "Vietnam", "China")) %>%
