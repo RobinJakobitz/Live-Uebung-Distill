@@ -1,7 +1,7 @@
 ---
 title: "Gaming und Covid-19"
 description: |
-  Wie Gaming Dir zur Zeit der Covid-19 Pandemie helfen kann
+  Wie Gaming Dir zur Zeit der Covid-19-Pandemie helfen kann
 site: distill::distill_website
 ---
 
@@ -47,7 +47,7 @@ SteamCharts <- read_csv(url("https://www.dropbox.com/s/i463nncn2a68xra/SteamChar
 
 ```
 
-# Die Covid-19 Pandemie:
+# Die Covid-19-Pandemie:
 
 Seit Anfang 2020 breitet sich das Coronavirus weltweit immer weiter aus. Den ersten stärkeren Anstieg von Neuinfektionen gab es dabei zwischen März und April 2020. 
 
@@ -61,7 +61,7 @@ Testdata_06%>%
   geom_line(color="midnightblue") +
   #geom_vline(aes(xintercept =Day)) +
   geom_point(size= 2) +
-  labs(title = "Covid-19 Neuinfektionen im Jahre 2020",x=NULL,y="Anzahl Neuinfektionen" ) +
+  labs(title = "Covid-19 Neuinfektionen weltweit im Jahre 2020",x=NULL,y="Anzahl Neuinfektionen" ) +
   scale_y_continuous(limits=c(0,700000), breaks=c(0,200000,400000,600000,800000),labels = c("0","200000","400000","600000"," ")) +
   transition_reveal(Day) -> plot_anim1
 
@@ -94,7 +94,7 @@ Testdata_Cleaner%>%
   ggplot(aes(x=date,y=new_cases)) +
   theme_minimal()+
   geom_line(color="midnightblue") +
-  labs(title = "Covid-19 Neuinfektionen im Jahre 2020",x=NULL,y="Anzahl Neuinfektionen" )
+  labs(title = "Covid-19 Neuinfektionen in Deutschland im Jahre 2020",x=NULL,y="Anzahl Neuinfektionen" )
 ```
 
 In dieser Phase, in der die positiven Coronafälle erstmals stiegen, kam es auch zum ersten Lockdown in Deutschland. Menschen blieben zu Hause, um sich und ihre Mitmenschen zu schützen. Man war also gezwungen, auf virtuelle Treffen umzusteigen. Hier bietet sich Gaming offensichtlich besonders gut an.
@@ -159,7 +159,7 @@ plot_1 / plot_2/plot_3 +
 
 Die Visualisierungen zeigen, dass die Spielerzahlen von beliebten Spielen auf Steam eine ähnliche Kurve bilden wie die Corona-Neuinfektionen während des Jahres 2020. Als es im März und April besonders viele positive Fälle gab, war auch die Spieleranzahl auf Steam sehr hoch. Ebenso flachen beide Kurven im Sommer wieder ab. Man kann also annehmen, dass viele Menschen den Lockdown dazu genutzt haben, um Videospiele zu spielen. Aus gutem Grund!
 
-# Wie Gaming Dein Leben während der Covid-19 Pandemie doppelt bereichert
+# Wie Gaming Dein Leben während der Covid-19-Pandemie doppelt bereichert
 
 ![](Images/pexels-vazhnik-7871580.jpg)
 

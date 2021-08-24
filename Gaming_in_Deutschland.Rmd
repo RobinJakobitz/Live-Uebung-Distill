@@ -99,4 +99,4 @@ Data_Time %>%
 ```
 Im Vergleich zu anderen Ländern verbringen die Deutschen wöchentlich noch relativ wenig Zeit mit Videospielen. Im Jahr 2020 durchschnittlich etwa sieben Stunden.
 Im März 2020 zeigte sich allerdings eine Zunahme der durchschnittlichen Spielzeit um 20%.
-Auch die Zahl der verkauften Spiele ist 2020 im Vergleich zum Vorjahr um 63% gestiegen. Hier lässt sich ein Zusammenhang mit der Covid-19 Pandemie feststellen, die seit Anfang 2020 viele Lebensbereiche beeinflusst, darunter auch die Gaming-Industrie. [Lies mehr](https://pro-gamer.netlify.app/Covid19_und_Gaming)
+Auch die Zahl der verkauften Spiele ist 2020 im Vergleich zum Vorjahr um 63% gestiegen. Hier lässt sich ein Zusammenhang mit der Covid-19-Pandemie feststellen, die seit Anfang 2020 viele Lebensbereiche beeinflusst, darunter auch die Gaming-Industrie. [Lies mehr](https://pro-gamer.netlify.app/Covid19_und_Gaming)
