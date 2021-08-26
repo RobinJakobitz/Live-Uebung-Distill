@@ -18,6 +18,7 @@ library(ggplot2)
 library(ggthemes)
 library(patchwork)
 library(magick)
+library(Rcpp)
 
 #library(coronavirus)
 #devtools::install_github("RamiKrispin/coronavirus")
