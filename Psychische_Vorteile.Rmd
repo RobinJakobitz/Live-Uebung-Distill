@@ -8,7 +8,7 @@ site: distill::distill_website
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Dass Videospiele irgendwelche Auswirkungen auf die Psyche haben, würden selbst die wenigsten Hardcoregamer bestreiten. Dass sie aber etwa aggressiv machen oder die Gewaltbereitschaft erhöhen, wie es oft gerade in Bezug auf Ego-Shooter diskutiert wurde, bezweifeln viele. Schließlich spiele man auch als Kind mit Ritterfiguren und verkleide sich an Karneval als Cowboy mit Pistole, ein verhaltensauffälligeres und schwierigeres Kind werde man dadurch aber nicht. Aber greifen derlei Vergleiche oder setzen Videospiele tatsächlich andere, gefährliche Prozesse im Kopf im Gang? Oder können sie sich im Gegenteil sogar positiv auf die Psyche auswirken? \n
+Dass Videospiele irgendwelche Auswirkungen auf die Psyche haben, würden selbst die wenigsten Hardcoregamer bestreiten. Dass sie aber etwa aggressiv machen oder die Gewaltbereitschaft erhöhen, wie es oft gerade in Bezug auf Ego-Shooter diskutiert wurde, bezweifeln viele. Schließlich spielen Kinder auch mit Spielzeugwaffen und gelten dadurch trotzdem nicht als schwierige oder gewaltbereite Menschen. Aber greifen derlei Vergleiche oder setzen Videospiele tatsächlich andere, gefährliche Prozesse im Kopf im Gang? Oder können sie sich im Gegenteil sogar positiv auf die Psyche auswirken? \n
 
 # Gamer können schneller entscheiden
 
